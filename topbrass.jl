@@ -10,6 +10,6 @@ m = Model(with_optimizer(Clp.Optimizer))
 
 status = optimize!(m)
 
-println("Build ", value(f), " football trophies.")
-println("Build ", value(s), " soccer trophies.")
-println("Total profit will be \$", objective_value(m))
+println("We need to build ", value(f), " football trophies.")
+println("We need to build ", value(s), " soccer trophies.")
+println("The maximum profit possible is: \$", objective_value(m))
